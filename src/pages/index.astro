@@ -1,0 +1,506 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Bustamante Cremona | Estudio Jurídico">
+  
+  <Navbar />
+
+  <header id="inicio" class="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden">
+    
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop" 
+        class="w-full h-full object-cover opacity-30"
+        alt="Fondo Abstracto Elegante"
+      />
+      <div class="absolute inset-0 bg-[#1A0920]/95 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-radial-gradient from-transparent to-[#1A0920]"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10 pt-28 pb-12 md:pt-20 md:pb-0">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-8 reveal-on-scroll text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-3 mb-6 md:mb-8 border border-gold/30 bg-white/5 px-4 py-2 backdrop-blur-md rounded-sm mx-auto lg:mx-0">
+            <span class="w-1.5 h-1.5 bg-gold rounded-full animate-pulse"></span>
+            <span class="text-gold text-[10px] md:text-xs font-bold uppercase tracking-[0.25em]">Estudio Jurídico Integral</span>
+          </div>
+          
+          <h1 class="text-4xl md:text-6xl lg:text-[5rem] text-white font-serif leading-[1.1] md:leading-[1.05] mb-6 md:mb-8 tracking-tight">
+            <span class="block font-light opacity-90">Defensa Penal &</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] font-bold italic">
+              Estrategia Civil.
+            </span>
+          </h1>
+          
+          <p class="text-gray-400 text-base md:text-xl font-light leading-relaxed max-w-2xl mb-8 md:mb-10 mx-auto lg:mx-0 lg:border-l lg:border-white/10 lg:pl-6">
+            Combinamos la <strong>tradición académica de la UBA</strong> con una visión moderna. Resultados concretos y confidencialidad absoluta en C.A.B.A. y Provincia.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="https://wa.me/5491100000000" class="group relative bg-gold text-primary px-8 py-4 overflow-hidden text-center shadow-lg shadow-gold/10">
+              <span class="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              <span class="relative font-serif font-bold italic tracking-wide group-hover:text-primary transition-colors flex items-center justify-center gap-2 text-base md:text-lg">
+                Agendar Consulta
+              </span>
+            </a>
+            <a href="#areas" class="group px-8 py-4 border border-white/20 text-white hover:border-gold hover:bg-gold/5 transition-all text-center">
+              <span class="uppercase text-xs tracking-[0.2em] font-medium group-hover:text-gold transition-colors">Conocer Áreas</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex lg:col-span-4 justify-end reveal-on-scroll delay-200">
+           <div class="relative w-64 h-64 rounded-full border border-white/5 flex items-center justify-center backdrop-blur-sm bg-white/5">
+              <div class="absolute inset-0 animate-[spin_15s_linear_infinite]">
+                 <svg class="w-full h-full text-gold/30 p-2" viewBox="0 0 100 100">
+                   <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent"/>
+                   <text font-size="11.5" font-family="serif" letter-spacing="2" fill="currentColor" font-weight="bold">
+                     <textPath href="#circlePath" startOffset="0%">
+                       BUSTAMANTE CREMONA • ABOGADOS •
+                     </textPath>
+                   </text>
+                 </svg>
+              </div>
+              <span class="font-serif text-5xl text-white/90 font-bold italic">BC</span>
+           </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="relative z-20 -mt-8 md:-mt-24 mb-12 md:mb-20 px-4 md:px-6">
+    <div class="container mx-auto">
+      <div class="bg-white shadow-2xl p-6 md:p-10 flex flex-col md:flex-row justify-around items-center gap-8 md:gap-6 border-t-4 border-gold reveal-on-scroll">
+         
+         <div class="flex items-center gap-5 w-full md:w-auto justify-start md:justify-start border-b md:border-b-0 border-gray-100 pb-4 md:pb-0">
+            <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary shrink-0">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+            </div>
+            <div class="flex flex-col">
+               <span class="text-2xl md:text-3xl font-serif text-primary font-bold">15+</span>
+               <span class="text-[10px] md:text-[11px] uppercase tracking-widest text-gray-500">Años de Trayectoria</span>
+            </div>
+         </div>
+
+         <div class="hidden md:block w-px h-12 bg-gray-200"></div>
+
+         <div class="flex items-center gap-5 w-full md:w-auto justify-start md:justify-start border-b md:border-b-0 border-gray-100 pb-4 md:pb-0">
+            <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary shrink-0">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+            </div>
+            <div class="flex flex-col">
+               <span class="text-2xl md:text-3xl font-serif text-primary font-bold">UBA</span>
+               <span class="text-[10px] md:text-[11px] uppercase tracking-widest text-gray-500">Formación Académica</span>
+            </div>
+         </div>
+
+         <div class="hidden md:block w-px h-12 bg-gray-200"></div>
+
+         <div class="flex items-center gap-5 w-full md:w-auto justify-start md:justify-start">
+            <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary shrink-0">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div class="flex flex-col">
+               <span class="text-2xl md:text-3xl font-serif text-primary font-bold">24hs</span>
+               <span class="text-[10px] md:text-[11px] uppercase tracking-widest text-gray-500">Atención Urgencias</span>
+            </div>
+         </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section id="estudio" class="py-12 md:py-20 overflow-hidden">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        
+        <div class="relative reveal-on-scroll order-2 md:order-1"> <div class="absolute inset-0 bg-primary translate-x-4 translate-y-4"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1000&auto=format&fit=crop" 
+            alt="Justicia" 
+            class="relative w-full h-[300px] md:h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-out shadow-lg"
+          />
+          <div class="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-paper p-4 md:p-6 shadow-xl max-w-[200px] md:max-w-xs border border-gray-100 hidden md:block">
+            <p class="font-serif italic text-primary text-sm md:text-lg">
+              "La justicia es la constante y perpetua voluntad de dar a cada uno su derecho."
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal-on-scroll order-1 md:order-2">
+          <h2 class="text-xs md:text-sm font-bold text-gold uppercase tracking-[0.2em] mb-4">Sobre la firma</h2>
+          <h3 class="text-3xl md:text-5xl text-primary font-serif mb-6 md:mb-8 leading-tight">
+            Rigurosidad técnica, <br> <span class="italic text-gray-400">visión humana.</span>
+          </h3>
+          <p class="text-gray-600 mb-6 font-light leading-relaxed text-base md:text-lg">
+            En <strong>Bustamante Cremona</strong> no gestionamos expedientes, gestionamos soluciones. Entendemos que detrás de cada conflicto legal hay un patrimonio, una libertad o una historia familiar en juego.
+          </p>
+          
+          <ul class="space-y-6 mt-8">
+            <li class="flex items-start gap-4 group">
+              <span class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white border border-gray-200 text-gold font-serif text-lg md:text-xl group-hover:bg-primary group-hover:text-gold transition-colors shrink-0">01</span>
+              <div>
+                <h4 class="font-serif text-primary font-bold text-lg">Formación UBA</h4>
+                <p class="text-sm text-gray-500 font-light">Respaldo académico de la universidad más prestigiosa de Latam.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4 group">
+              <span class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white border border-gray-200 text-gold font-serif text-lg md:text-xl group-hover:bg-primary group-hover:text-gold transition-colors shrink-0">02</span>
+              <div>
+                <h4 class="font-serif text-primary font-bold text-lg">Transparencia Total</h4>
+                <p class="text-sm text-gray-500 font-light">Claridad en honorarios y estrategias desde la primera consulta.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="py-24 bg-[#F5F5F0] relative overflow-hidden">
+    
+    <div class="absolute top-20 left-0 w-full text-center pointer-events-none select-none overflow-hidden">
+      <span class="text-[12rem] md:text-[20rem] font-serif font-bold text-gray-200/40 opacity-20 leading-none whitespace-nowrap">
+        PRACTICE
+      </span>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      
+      <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal-on-scroll">
+        <div class="max-w-2xl">
+           <span class="text-gold text-xs font-bold uppercase tracking-[0.2em] mb-4 block">Nuestro Expertise</span>
+           <h2 class="text-4xl md:text-6xl text-primary font-serif mb-6 leading-none">
+             Especialización <br> <span class="italic text-gray-400">Estratégica.</span>
+           </h2>
+           <p class="text-gray-500 font-light text-lg">
+             No abarcamos todo. Nos especializamos en lo que mejor hacemos, ofreciendo un abordaje técnico impecable en conflictos de alta complejidad.
+           </p>
+        </div>
+        <div class="hidden md:block">
+           <div class="w-24 h-24 rounded-full border border-primary/20 flex items-center justify-center animate-[spin_10s_linear_infinite]">
+              <svg class="w-full h-full text-primary p-2" viewBox="0 0 100 100">
+                <path id="curve" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent"/>
+                <text font-size="13" fill="currentColor">
+                  <textPath href="#curve" startOffset="0%">
+                    • ÁREAS DE PRÁCTICA • EXPERIENCIA
+                  </textPath>
+                </text>
+              </svg>
+           </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+        
+        <article class="group relative bg-white p-10 h-full border-t-4 border-gold hover:bg-primary transition-all duration-500 hover:-translate-y-2 shadow-sm hover:shadow-2xl overflow-hidden reveal-on-scroll">
+           <span class="absolute top-4 right-6 text-8xl font-serif text-gray-100 group-hover:text-white/5 transition-colors duration-500 font-bold select-none">01</span>
+           
+           <div class="relative z-10">
+             <div class="w-16 h-16 bg-gray-50 group-hover:bg-white/10 rounded-full flex items-center justify-center mb-8 transition-colors duration-500">
+                <svg class="w-8 h-8 text-primary group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+             </div>
+             
+             <h3 class="text-3xl font-serif text-primary group-hover:text-white mb-4 transition-colors">Derecho Penal</h3>
+             <p class="text-gray-500 group-hover:text-gray-300 font-light mb-8 transition-colors">
+               Defensa activa y estrategia procesal en causas complejas. Protegemos su libertad con rigor técnico.
+             </p>
+
+             <ul class="space-y-3 border-t border-gray-100 group-hover:border-white/10 pt-6">
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Defensas y Excarcelaciones
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Querellas Criminales
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Delitos Económicos
+               </li>
+             </ul>
+           </div>
+        </article>
+
+        <article class="group relative bg-white p-10 h-full border-t-4 border-gold hover:bg-primary transition-all duration-500 hover:-translate-y-2 shadow-sm hover:shadow-2xl overflow-hidden reveal-on-scroll delay-100">
+           <span class="absolute top-4 right-6 text-8xl font-serif text-gray-100 group-hover:text-white/5 transition-colors duration-500 font-bold select-none">02</span>
+           
+           <div class="relative z-10">
+             <div class="w-16 h-16 bg-gray-50 group-hover:bg-white/10 rounded-full flex items-center justify-center mb-8 transition-colors duration-500">
+                <svg class="w-8 h-8 text-primary group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+             </div>
+             
+             <h3 class="text-3xl font-serif text-primary group-hover:text-white mb-4 transition-colors">Contravencional</h3>
+             <p class="text-gray-500 group-hover:text-gray-300 font-light mb-8 transition-colors">
+               Gestión experta ante la Justicia de la C.A.B.A. Resolvemos conflictos administrativos con rapidez.
+             </p>
+
+             <ul class="space-y-3 border-t border-gray-100 group-hover:border-white/10 pt-6">
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Clausuras e Inspecciones
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Descargos de Multas
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Secuestro de Vehículos
+               </li>
+             </ul>
+           </div>
+        </article>
+
+        <article class="group relative bg-white p-10 h-full border-t-4 border-gold hover:bg-primary transition-all duration-500 hover:-translate-y-2 shadow-sm hover:shadow-2xl overflow-hidden reveal-on-scroll">
+           <span class="absolute top-4 right-6 text-8xl font-serif text-gray-100 group-hover:text-white/5 transition-colors duration-500 font-bold select-none">03</span>
+           
+           <div class="relative z-10">
+             <div class="w-16 h-16 bg-gray-50 group-hover:bg-white/10 rounded-full flex items-center justify-center mb-8 transition-colors duration-500">
+                <svg class="w-8 h-8 text-primary group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+             </div>
+             
+             <h3 class="text-3xl font-serif text-primary group-hover:text-white mb-4 transition-colors">Civil & Familia</h3>
+             <p class="text-gray-500 group-hover:text-gray-300 font-light mb-8 transition-colors">
+               Soluciones jurídicas para resguardar su patrimonio y reorganizar sus vínculos familiares.
+             </p>
+
+             <ul class="space-y-3 border-t border-gray-100 group-hover:border-white/10 pt-6">
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Sucesiones y Herencias
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Divorcios y Alimentos
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Daños y Perjuicios
+               </li>
+             </ul>
+           </div>
+        </article>
+
+        <article class="group relative bg-white p-10 h-full border-t-4 border-gold hover:bg-primary transition-all duration-500 hover:-translate-y-2 shadow-sm hover:shadow-2xl overflow-hidden reveal-on-scroll delay-100">
+           <span class="absolute top-4 right-6 text-8xl font-serif text-gray-100 group-hover:text-white/5 transition-colors duration-500 font-bold select-none">04</span>
+           
+           <div class="relative z-10">
+             <div class="w-16 h-16 bg-gray-50 group-hover:bg-white/10 rounded-full flex items-center justify-center mb-8 transition-colors duration-500">
+                <svg class="w-8 h-8 text-primary group-hover:text-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+             </div>
+             
+             <h3 class="text-3xl font-serif text-primary group-hover:text-white mb-4 transition-colors">Laboral</h3>
+             <p class="text-gray-500 group-hover:text-gray-300 font-light mb-8 transition-colors">
+               Representación integral en conflictos del trabajo. Hacemos valer sus derechos indemnizatorios.
+             </p>
+
+             <ul class="space-y-3 border-t border-gray-100 group-hover:border-white/10 pt-6">
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Despidos sin causa
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Trabajo no registrado
+               </li>
+               <li class="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-300 transition-colors">
+                 <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Accidentes (ART)
+               </li>
+             </ul>
+           </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="relative bg-[#150818] py-12 md:py-24 overflow-hidden">
+    
+    <div class="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gold/5 rounded-full blur-[80px] pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        
+        <div class="lg:col-span-5 reveal-on-scroll mt-8 lg:mt-0">
+          <span class="text-gold text-xs font-bold uppercase tracking-[0.2em] mb-4 block">Hablemos</span>
+          <h2 class="text-3xl md:text-5xl text-white font-serif mb-6 md:mb-8 leading-tight">
+            Su tranquilidad <br/> <span class="italic text-white/50">es nuestra prioridad.</span>
+          </h2>
+          <p class="text-gray-400 font-light mb-8 leading-relaxed text-base md:text-lg">
+            Cada minuto cuenta en un proceso legal. Agende una consulta inicial para evaluar su situación con total confidencialidad.
+          </p>
+
+          <div class="space-y-4 md:space-y-6">
+            <a href="https://wa.me/5491100000000" class="flex items-center gap-4 md:gap-6 group p-4 border border-white/5 hover:border-gold/30 hover:bg-white/5 transition-all duration-300 rounded-sm">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform shrink-0">
+                <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </div>
+              <div>
+                <span class="block text-gray-400 text-[10px] md:text-xs uppercase tracking-widest mb-1">WhatsApp Directo</span>
+                <span class="text-white font-serif text-lg md:text-xl">+54 9 11 0000-0000</span>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 md:gap-6 p-4 border border-white/5 rounded-sm">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 shrink-0">
+                <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div class="overflow-hidden">
+                <span class="block text-gray-400 text-[10px] md:text-xs uppercase tracking-widest mb-1">Email Corporativo</span>
+                <span class="text-white font-serif text-lg md:text-xl truncate block">info@estudiobc.com.ar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white p-6 md:p-12 shadow-2xl reveal-on-scroll delay-100 relative rounded-sm">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-transparent"></div>
+          
+          <h3 class="text-xl md:text-2xl font-serif text-primary mb-6 md:mb-8">Envíenos su consulta</h3>
+          
+          <form class="space-y-6 md:space-y-8">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+              
+              <div class="relative z-0 w-full group">
+                <input type="text" name="nombre" id="nombre" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer" placeholder=" " required />
+                <label for="nombre" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                  Nombre Completo
+                </label>
+              </div>
+
+              <div class="relative z-0 w-full group">
+                <input type="tel" name="telefono" id="telefono" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer" placeholder=" " required />
+                <label for="telefono" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                  Teléfono
+                </label>
+              </div>
+            </div>
+
+            <div class="relative z-0 w-full group">
+               <select id="area" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer cursor-pointer">
+                 <option value="" selected>Seleccione Área de Práctica</option>
+                 <option value="penal">Derecho Penal</option>
+                 <option value="civil">Derecho Civil & Familia</option>
+                 <option value="laboral">Derecho Laboral</option>
+                 <option value="otro">Otra consulta</option>
+               </select>
+               <div class="absolute right-0 top-3 pointer-events-none text-gray-400">
+                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+               </div>
+            </div>
+
+            <div class="relative z-0 w-full group">
+              <textarea name="mensaje" id="mensaje" rows="3" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gold peer resize-none" placeholder=" " required></textarea>
+              <label for="mensaje" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Breve descripción del caso
+              </label>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full bg-primary text-white font-serif font-bold italic tracking-wide py-4 px-8 hover:bg-gold hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl rounded-sm text-sm md:text-base">
+                Enviar Consulta
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#0F0512] text-white border-t border-white/5 pt-16 pb-8 md:pt-20 md:pb-10">
+    <div class="container mx-auto px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-16 text-center md:text-left">
+        
+        <div class="flex flex-col items-center md:items-start">
+           <div class="flex flex-col mb-6">
+             <span class="font-serif text-2xl font-bold text-white tracking-widest">BC</span>
+             <span class="text-[0.65rem] uppercase tracking-[0.3em] text-gold mt-1">Estudio Jurídico</span>
+           </div>
+           <p class="text-gray-500 text-sm font-light leading-relaxed mb-6 max-w-xs">
+             Excelencia académica y compromiso ético en la resolución de conflictos complejos en CABA y Provincia de Buenos Aires.
+           </p>
+           <div class="flex gap-4">
+             <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-primary transition-all duration-300"><span class="sr-only">LinkedIn</span>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+             </a>
+             <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-primary transition-all duration-300"><span class="sr-only">Instagram</span>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+             </a>
+           </div>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-lg text-white mb-6 border-b border-white/10 inline-block pb-2 md:border-none">Navegación</h4>
+          <ul class="space-y-4 text-sm font-light text-gray-400">
+            <li><a href="#inicio" class="hover:text-gold transition-colors hover:translate-x-1 inline-block duration-200">Inicio</a></li>
+            <li><a href="#estudio" class="hover:text-gold transition-colors hover:translate-x-1 inline-block duration-200">El Estudio</a></li>
+            <li><a href="#areas" class="hover:text-gold transition-colors hover:translate-x-1 inline-block duration-200">Áreas de Práctica</a></li>
+            <li><a href="#contacto" class="hover:text-gold transition-colors hover:translate-x-1 inline-block duration-200">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-lg text-white mb-6 border-b border-white/10 inline-block pb-2 md:border-none">Especialidades</h4>
+          <ul class="space-y-4 text-sm font-light text-gray-400">
+            <li><a href="#" class="hover:text-gold transition-colors">Derecho Penal</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Contravencional</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Civil & Sucesiones</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Derecho Laboral</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Amparos de Salud</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="font-serif text-lg text-white mb-6 border-b border-white/10 inline-block pb-2 md:border-none">Ubicación</h4>
+          <div class="flex items-start gap-3 mb-4 text-left">
+             <span class="text-gold mt-1 text-xl">📍</span>
+             <p class="text-sm text-gray-400 font-light leading-relaxed">
+               Av. Corrientes 1234, Piso 8<br>
+               C1043 AAQ, CABA<br>
+               Argentina
+             </p>
+          </div>
+          <div class="inline-block px-3 py-1 border border-white/10 text-[10px] uppercase tracking-widest text-gray-500 rounded-sm">
+            Atención con Turno
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+        <div class="text-xs text-gray-600 font-light text-center md:text-left order-2 md:order-1">
+          &copy; 2024 Bustamante Cremona. Todos los derechos reservados.
+        </div>
+        <div class="flex gap-6 text-xs text-gray-600 font-light order-1 md:order-2">
+           <a href="#" class="hover:text-gray-400 transition-colors">Aviso Legal</a>
+           <a href="#" class="hover:text-gray-400 transition-colors">Privacidad</a>
+        </div>
+        <div class="text-xs text-gray-700 font-light flex items-center gap-1 order-3">
+           Design by <span class="text-gray-500 font-medium">VisionPath</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target); // Solo animar una vez
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach((element) => {
+      observer.observe(element);
+    });
+  </script>
+
+</Layout>

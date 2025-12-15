@@ -1,0 +1,188 @@
+---
+// src/components/Navbar.astro
+const navLinks = [
+  { name: 'Inicio', href: '#inicio' },
+  { name: 'El Estudio', href: '#estudio' },
+  { name: 'Áreas de Práctica', href: '#areas' },
+];
+---
+
+<header 
+  id="navbar" 
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out border-b border-transparent"
+>
+  <div class="container mx-auto px-6">
+    <div class="flex justify-between items-center h-24 transition-all duration-500" id="nav-container">
+      
+      <a href="#" class="relative z-50 flex items-center gap-4 group">
+        <div class="relative w-10 h-10 flex items-center justify-center border border-white/20 bg-white/5 backdrop-blur-sm group-hover:border-gold group-hover:bg-gold/10 transition-all duration-500">
+          <span class="font-serif text-xl font-bold text-gold group-hover:text-white transition-colors">B</span>
+          <span class="absolute translate-x-1 translate-y-1 font-serif text-xl font-bold text-white/30 group-hover:text-gold/30 transition-colors">C</span>
+        </div>
+        
+        <div class="flex flex-col">
+          <h1 class="font-serif text-lg tracking-widest text-white leading-none group-hover:text-gold transition-colors duration-300">
+            BUSTAMANTE
+          </h1>
+          <span class="font-sans text-[0.6rem] uppercase tracking-[0.3em] text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
+            Cremona & Asoc.
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8">
+        {navLinks.map((link) => (
+          <a 
+            href={link.href} 
+            class="relative text-sm uppercase tracking-widest text-gray-300 hover:text-white transition-colors duration-300 py-2 group/link"
+          >
+            {link.name}
+            <span class="absolute bottom-0 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover/link:w-full"></span>
+          </a>
+        ))}
+        
+        <div class="w-px h-6 bg-white/20 mx-2"></div>
+
+        <a 
+          href="https://wa.me/5491100000000" 
+          target="_blank"
+          class="relative px-6 py-2 border border-gold/50 text-gold text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-primary transition-all duration-300 group overflow-hidden"
+        >
+          <span class="relative z-10">Consulta Express</span>
+        </a>
+      </nav>
+
+      <button id="menu-toggle" class="md:hidden relative z-50 w-10 h-10 flex flex-col justify-center items-end gap-1.5 group focus:outline-none">
+        <span class="w-8 h-0.5 bg-gold transition-all duration-300 origin-right group-[.is-active]:-rotate-45 group-[.is-active]:-translate-y-0.5"></span>
+        <span class="w-6 h-0.5 bg-white transition-all duration-300 group-[.is-active]:opacity-0"></span>
+        <span class="w-8 h-0.5 bg-gold transition-all duration-300 origin-right group-[.is-active]:rotate-45 group-[.is-active]:translate-y-0.5"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <div 
+    id="mobile-menu" 
+    class="fixed inset-0 bg-[#0F0512] z-40 flex flex-col justify-center items-center opacity-0 pointer-events-none transition-all duration-500 backdrop-blur-xl"
+  >
+    <div class="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <nav class="flex flex-col items-center gap-8 relative z-10">
+      {navLinks.map((link, index) => (
+        <a 
+          href={link.href} 
+          class="mobile-link text-3xl font-serif text-white/80 hover:text-gold transition-colors duration-300 translate-y-8 opacity-0"
+          style={`transition-delay: ${index * 100}ms`}
+        >
+          {link.name}
+        </a>
+      ))}
+      <div class="w-12 h-px bg-white/10 my-4"></div>
+      <a 
+        href="https://wa.me/5491100000000"
+        class="mobile-link text-sm uppercase tracking-[0.2em] text-gold border border-gold px-8 py-3 translate-y-8 opacity-0 hover:bg-gold hover:text-primary transition-all duration-300"
+        style="transition-delay: 300ms"
+      >
+        Contactar Ahora
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Obtenemos los elementos
+  const navbar = document.getElementById('navbar');
+  const navContainer = document.getElementById('nav-container');
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+  
+  let isMenuOpen = false;
+
+  // Función para gestionar el aspecto del Navbar
+  function updateNavbarAppearance() {
+    // Si algún elemento crítico no existe, salimos para evitar errores de TS
+    if (!navbar || !navContainer) return;
+
+    if (isMenuOpen) {
+      // SI EL MENÚ ESTÁ ABIERTO:
+      navbar.classList.remove('bg-primary/90', 'backdrop-blur-md', 'shadow-lg', 'border-white/5');
+      navbar.classList.add('bg-transparent', 'border-transparent');
+      
+      // Matamos la transición para que sea INSTANTÁNEO
+      navbar.classList.remove('duration-500');
+      navbar.classList.add('duration-0'); 
+      return;
+    }
+
+    // SI EL MENÚ ESTÁ CERRADO:
+    navbar.classList.remove('duration-0');
+    navbar.classList.add('duration-500');
+
+    if (window.scrollY > 50) {
+      navbar.classList.add('bg-primary/90', 'backdrop-blur-md', 'shadow-lg', 'border-white/5');
+      navbar.classList.remove('border-transparent', 'bg-transparent');
+      navContainer.classList.remove('h-24');
+      navContainer.classList.add('h-20');
+    } else {
+      navbar.classList.remove('bg-primary/90', 'backdrop-blur-md', 'shadow-lg', 'border-white/5');
+      navbar.classList.add('border-transparent', 'bg-transparent');
+      navContainer.classList.remove('h-20');
+      navContainer.classList.add('h-24');
+    }
+  }
+
+  // Evento Scroll
+  window.addEventListener('scroll', () => {
+    if (!isMenuOpen) updateNavbarAppearance();
+  });
+
+  // Lógica Menú Móvil
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      menuToggle.classList.toggle('is-active');
+      
+      if (isMenuOpen) {
+        // ABRIR
+        updateNavbarAppearance();
+        
+        mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = 'hidden';
+        
+        setTimeout(() => {
+          mobileLinks.forEach(link => {
+            link.classList.remove('translate-y-8', 'opacity-0');
+          });
+        }, 100);
+
+      } else {
+        // CERRAR
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+        
+        mobileLinks.forEach(link => {
+          link.classList.add('translate-y-8', 'opacity-0');
+        });
+
+        setTimeout(() => {
+          isMenuOpen = false;
+          updateNavbarAppearance();
+        }, 300);
+      }
+    });
+
+    // Cerrar al clickear enlaces
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        isMenuOpen = false;
+        menuToggle.classList.remove('is-active');
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+        mobileLinks.forEach(l => l.classList.add('translate-y-8', 'opacity-0'));
+        updateNavbarAppearance();
+      });
+    });
+  }
+</script>
